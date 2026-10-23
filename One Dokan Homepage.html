@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Dokan |  Jumairah Fashion & Sumaishaz</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        onedokan: {
+                            gold: '#D4AF37',
+                            goldDark: '#AA820A',
+                            navy: '#0b132b',
+                            navyLight: '#1c2541'
+                        },
+                        jumairah: {
+                            DEFAULT: '#4a154b',
+                            dark: '#300d31',
+                            accent: '#e2b350',
+                            rose: '#800020'
+                        },
+                        sumaishaz: {
+                            DEFAULT: '#e63946',
+                            dark: '#1d3557',
+                            accent: '#457b9d',
+                            light: '#f1faee'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        /* Gradient shimmer effect */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-bg-gradient {
+            background: linear-gradient(135deg, #1c2541 0%, #0b132b 100%);
+        }
+        .jumairah-card {
+            background: linear-gradient(135deg, #300d31 0%, #4a154b 100%);
+        }
+        .sumaishaz-card {
+            background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-onedokan-navy via-slate-900 to-onedokan-navy text-amber-300 text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-center sm:text-left">
+            <div class="hidden sm:flex items-center gap-4">
+                <span><i class="fa-solid fa-truck-fast text-amber-400 mr-1"></i> সারা বাংলাদেশে ক্যাশ অন ডেলিভারি</span>
+                <span><i class="fa-solid fa-phone-volume text-amber-400 mr-1"></i> হটলাইন: ০১৯০০-০০০০০০</span>
+            </div>
+            <div class="w-full sm:w-auto font-medium tracking-wide">
+                🎉 স্পেশাল অফার! <span class="text-white">Jumairah Fashion</span> ও <span class="text-white">Sumaishaz</span>-এর সমস্ত নতুন কালেকশনে ফ্রি ডেলিভারি!
+            </div>
+            <div class="hidden md:flex items-center gap-3">
+                <a href="#offers" class="hover:text-white transition">অফারসমূহ</a>
+                <span>|</span>
+                <a href="#track" class="hover:text-white transition">অর্ডার ট্র্যাকিং</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-slate-200 shadow-sm transition-all duration-300">
+        <!-- Main Top Header -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex items-center justify-between gap-4">
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-700 text-2xl focus:outline-none p-1">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Brand Logo & Sub Brand Switcher -->
+                <div class="flex items-center gap-4">
+                    <a href="#" class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                            <span class="bg-gradient-to-r from-amber-500 to-amber-700 text-white font-black text-xl sm:text-2xl px-2.5 py-0.5 rounded-lg shadow-sm">১</span>
+                            <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">
+                                ওয়ান<span class="text-amber-600">দোকান</span>
+                            </span>
+                        </div>
+                        <span class="text-[10px] sm:text-xs text-slate-500 font-semibold tracking-wider uppercase -mt-1 pl-1">One Dokan Shopping</span>
+                    </a>
+
+                    <!-- Quick Sub-brand Quick Selector Pills (Desktop) -->
+                    <div class="hidden xl:flex items-center gap-1.5 ml-4 pl-4 border-l border-slate-300">
+                        <button onclick="filterBySubBrand('all')" class="brand-pill px-3 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition active-pill">
+                            সকল ব্র্যান্ড
+                        </button>
+                        <button onclick="filterBySubBrand('jumairah')" class="brand-pill px-3 py-1 text-xs font-semibold rounded-full bg-purple-50 text-purple-900 border border-purple-200 hover:bg-purple-100 transition flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-purple-600"></span> Jumairah Fashion
+                        </button>
+                        <button onclick="filterBySubBrand('sumaishaz')" class="brand-pill px-3 py-1 text-xs font-semibold rounded-full bg-rose-50 text-rose-900 border border-rose-200 hover:bg-rose-100 transition flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-rose-600"></span> Sumaishaz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-md mx-4">
+                    <div class="relative w-full">
+                        <input type="text" id="search-input" placeholder="জুমেয়রা ফ্যাশন বা সুমাইশাজ-এর পোশাক খুঁজুন..." class="w-full bg-slate-100 border border-slate-300 text-slate-800 text-sm rounded-full pl-4 pr-10 py-2 focus:outline-none focus:border-amber-500 focus:bg-white focus:ring-2 focus:ring-amber-200 transition">
+                        <button class="absolute right-0 top-0 h-full px-4 text-slate-500 hover:text-amber-600">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Action Icons -->
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <!-- Wishlist -->
+                    <button onclick="openWishlistModal()" class="relative p-2 text-slate-700 hover:text-amber-600 transition">
+                        <i class="fa-regular fa-heart text-xl sm:text-2xl"></i>
+                        <span id="wishlist-count" class="absolute top-0 right-0 bg-rose-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                    </button>
+
+                    <!-- Cart Drawer Trigger -->
+                    <button onclick="toggleCartModal()" class="relative p-2 bg-amber-50 hover:bg-amber-100 text-amber-800 rounded-full transition flex items-center gap-2 px-3">
+                        <div class="relative">
+                            <i class="fa-solid fa-bag-shopping text-xl"></i>
+                            <span id="cart-count" class="absolute -top-2 -right-2 bg-amber-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                        </div>
+                        <span class="hidden sm:inline font-bold text-xs" id="cart-total-header">৳ 0</span>
+                    </button>
+
+                    <!-- User Account -->
+                    <a href="#login" class="hidden sm:flex items-center gap-2 p-1.5 hover:bg-slate-100 rounded-lg text-slate-700 transition">
+                        <i class="fa-regular fa-user text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Search Bar -->
+            <div class="mt-2 md:hidden">
+                <div class="relative w-full">
+                    <input type="text" placeholder="পণ্য খুঁজুন..." class="w-full bg-slate-100 border border-slate-300 text-slate-800 text-sm rounded-full pl-4 pr-10 py-1.5 focus:outline-none focus:border-amber-500">
+                    <button class="absolute right-0 top-0 h-full px-3 text-slate-500">
+                        <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar Links -->
+        <nav class="hidden lg:block bg-slate-900 text-white text-sm border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-8 flex items-center justify-between">
+                <div class="flex items-center space-x-1 font-medium">
+                    <a href="#" class="px-4 py-3 bg-amber-600 text-white font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-house"></i> হোম
+                    </a>
+                    
+                    <!-- Jumairah Dropdown -->
+                    <div class="relative group">
+                        <a href="#jumairah-section" class="px-4 py-3 hover:bg-purple-900 hover:text-amber-300 flex items-center gap-1 transition">
+                            <span class="w-2 h-2 rounded-full bg-purple-400"></span> Jumairah Fashion
+                            <i class="fa-solid fa-chevron-down text-xs ml-1 opacity-70"></i>
+                        </a>
+                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white text-slate-800 shadow-xl rounded-b-lg border border-slate-200 overflow-hidden z-50">
+                            <div class="p-2 border-b border-purple-100 bg-purple-50">
+                                <span class="text-xs font-bold text-purple-900 uppercase">অভিজাত ট্র্যাডিশনাল ওয়্যার</span>
+                            </div>
+                            <a href="#jumairah-section" class="block px-4 py-2 text-xs hover:bg-purple-50 hover:text-purple-700">এক্সক্লুসিভ শাড়ি কালেকশন</a>
+                            <a href="#jumairah-section" class="block px-4 py-2 text-xs hover:bg-purple-50 hover:text-purple-700">ডিজাইনার সালোয়ার কামিজ</a>
+                            <a href="#jumairah-section" class="block px-4 py-2 text-xs hover:bg-purple-50 hover:text-purple-700">প্রিমিয়াম মডেস্ট ওয়্যার & আবায়া</a>
+                            <a href="#jumairah-section" class="block px-4 py-2 text-xs hover:bg-purple-50 hover:text-purple-700">পার্টি ড্রেস & লেহেঙ্গা</a>
+                        </div>
+                    </div>
+
+                    <!-- Sumaishaz Dropdown -->
+                    <div class="relative group">
+                        <a href="#sumaishaz-section" class="px-4 py-3 hover:bg-rose-900 hover:text-amber-300 flex items-center gap-1 transition">
+                            <span class="w-2 h-2 rounded-full bg-rose-400"></span> Sumaishaz
+                            <i class="fa-solid fa-chevron-down text-xs ml-1 opacity-70"></i>
+                        </a>
+                        <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white text-slate-800 shadow-xl rounded-b-lg border border-slate-200 overflow-hidden z-50">
+                            <div class="p-2 border-b border-rose-100 bg-rose-50">
+                                <span class="text-xs font-bold text-rose-900 uppercase">ট্রেন্ডি ও মডার্ন কালেকশন</span>
+                            </div>
+                            <a href="#sumaishaz-section" class="block px-4 py-2 text-xs hover:bg-rose-50 hover:text-rose-700">মডার্ন ক্যাজুয়াল আউটফিট</a>
+                            <a href="#sumaishaz-section" class="block px-4 py-2 text-xs hover:bg-rose-50 hover:text-rose-700">ওয়েস্টার্ন ও ফিউশন ড্রেস</a>
+                            <a href="#sumaishaz-section" class="block px-4 py-2 text-xs hover:bg-rose-50 hover:text-rose-700">স্টাইলিশ ব্যাগ ও জুয়েলারি</a>
+                            <a href="#sumaishaz-section" class="block px-4 py-2 text-xs hover:bg-rose-50 hover:text-rose-700">ট্রেন্ডি অ্যাক্সেসরিজ</a>
+                        </div>
+                    </div>
+
+                    <a href="#categories" class="px-4 py-3 hover:bg-slate-800 hover:text-amber-400 transition">ক্যাটাগরি</a>
+                    <a href="#flash-sale" class="px-4 py-3 hover:bg-slate-800 text-amber-400 font-semibold transition flex items-center gap-1">
+                        <i class="fa-solid fa-bolt"></i> ফ্লাশ সেল
+                    </a>
+                    <a href="#contact" class="px-4 py-3 hover:bg-slate-800 hover:text-amber-400 transition">যোগাযোগ</a>
+                </div>
+
+                <div class="flex items-center gap-2 text-xs text-slate-300">
+                    <span>১০০% প্রিমিয়াম কোয়ালিটি গ্যারান্টি</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu-drawer" class="fixed inset-0 z-50 bg-black/60 hidden transition-opacity">
+        <div class="w-4/5 max-w-xs bg-white h-full shadow-2xl p-5 overflow-y-auto flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center pb-4 border-b">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-amber-600 text-white font-bold px-2 py-0.5 rounded">১</span>
+                        <span class="font-bold text-slate-900 text-lg">ওয়ান দোকান</span>
+                    </div>
+                    <button id="close-mobile-menu" class="text-slate-500 hover:text-rose-600 text-xl">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="mt-4 space-y-1">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">সাব-ব্র্যান্ড ফিল্টার</p>
+                    <button onclick="filterBySubBrand('all'); closeMobileNav();" class="w-full text-left px-3 py-2 rounded-lg bg-slate-100 font-medium text-xs mb-1">
+                        সকল পণ্য (All Dokan)
+                    </button>
+                    <button onclick="filterBySubBrand('jumairah'); closeMobileNav();" class="w-full text-left px-3 py-2 rounded-lg bg-purple-50 text-purple-900 font-medium text-xs mb-1 flex items-center justify-between">
+                        <span>Jumairah Fashion</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+                    <button onclick="filterBySubBrand('sumaishaz'); closeMobileNav();" class="w-full text-left px-3 py-2 rounded-lg bg-rose-50 text-rose-900 font-medium text-xs mb-3 flex items-center justify-between">
+                        <span>Sumaishaz</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">ন্যাভিগেশন</p>
+                    <a href="#" class="block px-3 py-2 text-sm font-semibold rounded hover:bg-slate-100">হোম</a>
+                    <a href="#jumairah-section" class="block px-3 py-2 text-sm text-purple-900 font-medium rounded hover:bg-purple-50">Jumairah - ট্র্যাডিশনাল ফ্যাশন</a>
+                    <a href="#sumaishaz-section" class="block px-3 py-2 text-sm text-rose-900 font-medium rounded hover:bg-rose-50">Sumaishaz - ট্রেন্ডি ওয়্যার</a>
+                    <a href="#categories" class="block px-3 py-2 text-sm font-medium rounded hover:bg-slate-100">ক্যাটাগরি সমূহ</a>
+                    <a href="#flash-sale" class="block px-3 py-2 text-sm text-amber-600 font-medium rounded hover:bg-amber-50">ফ্লাশ সেল অফার</a>
+                    <a href="#testimonials" class="block px-3 py-2 text-sm font-medium rounded hover:bg-slate-100">কাস্টমার রিভিও</a>
+                    <a href="#contact" class="block px-3 py-2 text-sm font-medium rounded hover:bg-slate-100">যোগাযোগ</a>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t text-xs text-slate-500">
+                <p class="font-medium text-slate-700">সহায়তার জন্য কল করুন:</p>
+                <p class="text-amber-700 font-bold text-sm mt-1">০১৯০০-০০০০০০</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section Carousel / Banner -->
+    <section class="relative bg-slate-900 text-white overflow-hidden">
+        <!-- Background Blur Decor -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-rose-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 px-3 py-1 rounded-full text-amber-300 text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        ওয়ান দোকান প্রিমিয়াম কালেকশন ২০২৬
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                        অভিজাত ও আধুনিকতার <br class="hidden sm:inline">
+                        <span class="gold-gradient-text">অনন্য মেলবন্ধন</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        <strong class="text-purple-300">Jumairah Fashion</strong>-এর রাজকীয় ট্র্যাডিশনাল পোশাক এবং <strong class="text-rose-300">Sumaishaz</strong>-এর স্মার্ট আধুনিক ট্রেন্ডি কালেকশন এখন এক ছাদের নিচে — শুধু <strong>One Dokan</strong>-এ।
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-3 justify-center lg:justify-start pt-2">
+                        <a href="#jumairah-section" class="bg-gradient-to-r from-purple-700 to-purple-900 hover:from-purple-800 hover:to-purple-950 text-amber-300 font-semibold px-6 py-3 rounded-xl border border-purple-500/50 shadow-lg hover:shadow-purple-900/50 transition duration-300 flex items-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-crown text-amber-400"></i> Jumairah ফ্যাশন
+                        </a>
+                        <a href="#sumaishaz-section" class="bg-gradient-to-r from-rose-600 to-rose-800 hover:from-rose-700 hover:to-rose-900 text-white font-semibold px-6 py-3 rounded-xl border border-rose-400/50 shadow-lg hover:shadow-rose-900/50 transition duration-300 flex items-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Sumaishaz ট্রেন্ড
+                        </a>
+                        <a href="#products-grid" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-5 py-3 rounded-xl border border-slate-700 transition text-sm sm:text-base">
+                            সবগুলো দেখুন
+                        </a>
+                    </div>
+
+                    <!-- Small highlights -->
+                    <div class="pt-6 grid grid-cols-3 gap-2 border-t border-slate-800 text-center lg:text-left text-xs text-slate-400">
+                        <div>
+                            <p class="font-bold text-white text-sm sm:text-base">১০০% অরিজিনাল</p>
+                            <p>গুণমান নিশ্চিত প্রোডাক্ট</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-sm sm:text-base">ক্যাশ অন ডেলিভারি</p>
+                            <p>পণ্য হাতে পেয়ে পেমেন্ট</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-sm sm:text-base">সহজ রিটার্ন</p>
+                            <p>৭ দিনের রিটার্ন পলিসি</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Feature Banner -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Dual Brand Banner Collage -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Jumairah Feature Card -->
+                            <div class="group relative rounded-2xl overflow-hidden shadow-2xl border border-purple-500/30 transform hover:-translate-y-1 transition duration-300">
+                                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80" alt="Jumairah Fashion Saree" class="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-purple-950 via-purple-950/40 to-transparent p-4 flex flex-col justify-end">
+                                    <span class="bg-amber-400 text-purple-950 font-extrabold text-[10px] px-2 py-0.5 rounded w-max uppercase mb-1">Jumairah</span>
+                                    <h3 class="text-white font-bold text-sm sm:text-base">রেশমি ও কাতান শাড়ি</h3>
+                                    <p class="text-amber-200 text-xs">অভিজাত ট্র্যাডিশনাল লুক</p>
+                                </div>
+                            </div>
+
+                            <!-- Sumaishaz Feature Card -->
+                            <div class="group relative rounded-2xl overflow-hidden shadow-2xl border border-rose-500/30 transform hover:-translate-y-1 transition duration-300 mt-6">
+                                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Sumaishaz Modern Wear" class="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-4 flex flex-col justify-end">
+                                    <span class="bg-rose-500 text-white font-extrabold text-[10px] px-2 py-0.5 rounded w-max uppercase mb-1">Sumaishaz</span>
+                                    <h3 class="text-white font-bold text-sm sm:text-base">মডার্ন ক্যাজুয়ালস</h3>
+                                    <p class="text-rose-200 text-xs">স্মার্ট ও ট্রেন্ডি ডিজাইন</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 font-bold px-4 py-2 rounded-full shadow-xl border-2 border-slate-900 text-xs sm:text-sm flex items-center gap-2 whitespace-nowrap">
+                            <i class="fa-solid fa-sparkles"></i> নতুন সিজনাল কালেকশন লাইভ!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sub-Brand Highlight Section (Duo Showcase) -->
+    <section class="py-12 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full uppercase tracking-wider">আমাদের বিশেষ দুই ব্র্যান্ড</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">আপনার স্টাইল অনুযায়ী পছন্দ করুন</h2>
+                <p class="text-slate-600 text-sm mt-1">ট্র্যাডিশনাল মার্জিত রূপ থেকে শুরু করে ওয়েস্টার্ন আধুনিক ফ্যাশন — সব এক প্ল্যাটফর্মে</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Jumairah Fashion Banner -->
+                <div class="jumairah-card rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden shadow-xl group border border-purple-400/20">
+                    <div class="absolute -right-10 -bottom-10 opacity-10 text-white text-9xl font-serif select-none pointer-events-none">J</div>
+                    <div class="relative z-10 flex flex-col h-full justify-between space-y-6">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-amber-400 text-purple-950 font-bold text-xs px-3 py-1 rounded-full uppercase tracking-widest">
+                                    <i class="fa-solid fa-gem mr-1"></i> Jumairah Fashion
+                                </span>
+                                <span class="text-xs text-purple-200 bg-purple-900/60 px-2.5 py-1 rounded-md border border-purple-500/30">এলিগ্যান্ট & এক্সক্লুসিভ</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-bold text-amber-200 leading-snug">
+                                ট্র্যাডিশনাল এথনিক & মডেস্ট ওয়্যার
+                            </h3>
+                            <p class="text-purple-100 text-sm mt-2 leading-relaxed">
+                                জামদানি, পার্টি সালোয়ার কামিজ, প্রিমিয়াম আবায়া ও এক্সক্লুসিভ শাড়ির সমাহার। রাজকীয় রূপ ও মার্জিত আউটফিটের জন্য সেরা পছন্দ।
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <ul class="text-xs space-y-1.5 text-purple-200">
+                                <li><i class="fa-solid fa-circle-check text-amber-400 mr-2"></i> হস্তশিল্পের সুক্ষ্ম এমব্রয়ডারি ওয়ার্ক</li>
+                                <li><i class="fa-solid fa-circle-check text-amber-400 mr-2"></i> মানসম্মত সুতি, সিল্ক ও জর্জেট ফেব্রিক</li>
+                            </ul>
+                            <button onclick="filterBySubBrand('jumairah')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-purple-950 font-bold px-6 py-2.5 rounded-xl transition duration-200 shadow-md">
+                                Jumairah কালেকশন দেখুন <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sumaishaz Banner -->
+                <div class="sumaishaz-card rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden shadow-xl group border border-blue-400/20">
+                    <div class="absolute -right-10 -bottom-10 opacity-10 text-white text-9xl font-serif select-none pointer-events-none">S</div>
+                    <div class="relative z-10 flex flex-col h-full justify-between space-y-6">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-rose-500 text-white font-bold text-xs px-3 py-1 rounded-full uppercase tracking-widest">
+                                    <i class="fa-solid fa-bolt mr-1"></i> Sumaishaz
+                                </span>
+                                <span class="text-xs text-blue-200 bg-slate-900/60 px-2.5 py-1 rounded-md border border-slate-500/30">স্মার্ট, ট্রেন্ডি & ক্যাজুয়াল</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-bold text-rose-200 leading-snug">
+                                মডার্ন ট্রেন্ডি ফ্যাশন & অ্যাক্সেসরিজ
+                            </h3>
+                            <p class="text-blue-100 text-sm mt-2 leading-relaxed">
+                                আধুনিক তরুণীদের জন্য ট্রেন্ডি টু-পিস, ওয়েস্টার্ন টপস, হ্যান্ডব্যাগ ও স্টাইলিশ অলংকার। আপনার প্রতিদিনের স্মার্ট লুক সুনিশ্চিত করতে।
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <ul class="text-xs space-y-1.5 text-blue-200">
+                                <li><i class="fa-solid fa-circle-check text-rose-400 mr-2"></i> লেটেস্ট ট্রেন্ড ও ওয়েস্টার্ন কাট আর্কিটেকচার</li>
+                                <li><i class="fa-solid fa-circle-check text-rose-400 mr-2"></i> সাশ্রয়ী মূল্যে প্রিমিয়াম ফিনিশিং</li>
+                            </ul>
+                            <button onclick="filterBySubBrand('sumaishaz')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-rose-500 hover:bg-rose-400 text-white font-bold px-6 py-2.5 rounded-xl transition duration-200 shadow-md">
+                                Sumaishaz কালেকশন দেখুন <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale Countdown Section -->
+    <section id="flash-sale" class="py-10 bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left">
+                    <span class="inline-block bg-slate-950 text-amber-300 font-extrabold text-xs px-3 py-1 rounded-md uppercase tracking-wider mb-2">
+                        🔥 লিমিটেড টাইম ধামাকা
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-950">
+                        স্পেশাল উইকেন্ড ফ্লাশ সেল!
+                    </h2>
+                    <p class="text-slate-900 text-xs sm:text-sm font-medium mt-1">
+                        Jumairah ও Sumaishaz-এর নির্বাচিত প্রোডাক্টে পাচ্ছেন সর্বোচ্চ ৪০% পর্যন্ত ছাড়!
+                    </p>
+                </div>
+
+                <!-- Timer -->
+                <div class="flex items-center gap-3 font-bold">
+                    <div class="bg-slate-950 text-white p-3 rounded-2xl text-center min-w-[65px] border border-amber-400/30">
+                        <span id="timer-hours" class="block text-2xl font-black text-amber-400">০৮</span>
+                        <span class="text-[10px] text-slate-400 uppercase tracking-wider">ঘণ্টা</span>
+                    </div>
+                    <span class="text-2xl font-black text-slate-950">:</span>
+                    <div class="bg-slate-950 text-white p-3 rounded-2xl text-center min-w-[65px] border border-amber-400/30">
+                        <span id="timer-minutes" class="block text-2xl font-black text-amber-400">৪৫</span>
+                        <span class="text-[10px] text-slate-400 uppercase tracking-wider">মিঃ</span>
+                    </div>
+                    <span class="text-2xl font-black text-slate-950">:</span>
+                    <div class="bg-slate-950 text-white p-3 rounded-2xl text-center min-w-[65px] border border-amber-400/30">
+                        <span id="timer-seconds" class="block text-2xl font-black text-amber-400">১২</span>
+                        <span class="text-[10px] text-slate-400 uppercase tracking-wider">সেঃ</span>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#products-grid" class="inline-block bg-slate-950 hover:bg-slate-900 text-amber-400 font-extrabold px-6 py-3 rounded-xl shadow-lg transition">
+                        অফার দেখুন <i class="fa-solid fa-bolt ml-1 text-amber-400"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Products Grid Section with Tabs & Filters -->
+    <section id="products-grid" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header & Category Tabs -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-slate-200 pb-4">
+            <div>
+                <span class="text-amber-600 font-bold text-xs uppercase tracking-wider">One Dokan এক্সক্লুসিভ</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">পছন্দের প্রোডাক্ট সমাহার</h2>
+            </div>
+
+            <!-- Interactive Tab Filters -->
+            <div class="flex flex-wrap gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none" id="tab-container">
+                <button onclick="setActiveTab(this, 'all')" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl bg-amber-600 text-white shadow-sm transition">
+                    সকল কালেকশন
+                </button>
+                <button onclick="setActiveTab(this, 'jumairah')" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl bg-slate-100 text-slate-700 hover:bg-purple-100 hover:text-purple-900 transition">
+                    Jumairah Specials
+                </button>
+                <button onclick="setActiveTab(this, 'sumaishaz')" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl bg-slate-100 text-slate-700 hover:bg-rose-100 hover:text-rose-900 transition">
+                    Sumaishaz Trending
+                </button>
+                <button onclick="setActiveTab(this, 'bestseller')" class="tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                    বেস্ট সেলার
+                </button>
+            </div>
+        </div>
+
+        <!-- Products Cards Grid Container -->
+        <div id="products-container" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <!-- Dynamic JavaScript Rendering Target -->
+        </div>
+
+    </section>
+
+    <!-- Visual Categories Showcase -->
+    <section id="categories" class="py-12 bg-slate-50 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">জনপ্রিয় ক্যাটাগরি</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1">আপনার প্রয়োজনীয় পোশাকের বিভাগ নির্বাচন করুন</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- Cat 1 -->
+                <div onclick="filterBySubBrand('jumairah')" class="cursor-pointer group bg-white rounded-2xl p-4 text-center border border-slate-200 shadow-sm hover:shadow-md hover:border-purple-300 transition">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-purple-100 text-purple-800 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-[#f06292] fa-person-dress"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-sm">এক্সক্লুসিভ শাড়ি</h3>
+                    <span class="text-[11px] text-purple-700 font-medium">Jumairah</span>
+                </div>
+
+                <!-- Cat 2 -->
+                <div onclick="filterBySubBrand('jumairah')" class="cursor-pointer group bg-white rounded-2xl p-4 text-center border border-slate-200 shadow-sm hover:shadow-md hover:border-purple-300 transition">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-purple-100 text-purple-800 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-sm">সালোয়ার কামিজ</h3>
+                    <span class="text-[11px] text-purple-700 font-medium">Jumairah</span>
+                </div>
+
+                <!-- Cat 3 -->
+                <div onclick="filterBySubBrand('jumairah')" class="cursor-pointer group bg-white rounded-2xl p-4 text-center border border-slate-200 shadow-sm hover:shadow-md hover:border-purple-300 transition">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-purple-100 text-purple-800 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-sm">মডেস্ট আবায়া</h3>
+                    <span class="text-[11px] text-purple-700 font-medium">Jumairah</span>
+                </div>
+
+                <!-- Cat 4 -->
+                <div onclick="filterBySubBrand('sumaishaz')" class="cursor-pointer group bg-white rounded-2xl p-4 text-center border border-slate-200 shadow-sm hover:shadow-md hover:border-rose-300 transition">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-rose-100 text-rose-800 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-vest"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-sm">মডার্ন টপস</h3>
+                    <span class="text-[11px] text-rose-700 font-medium">Sumaishaz</span>
+                </div>
+
+                <!-- Cat 5 -->
+                <div onclick="filterBySubBrand('sumaishaz')" class="cursor-pointer group bg-white rounded-2xl p-4 text-center border border-slate-200 shadow-sm hover:shadow-md hover:border-rose-300 transition">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-rose-100 text-rose-800 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-sm">লেডিস হ্যান্ডব্যাগ</h3>
+                    <span class="text-[11px] text-rose-700 font-medium">Sumaishaz</span>
+                </div>
+
+                <!-- Cat 6 -->
+                <div onclick="filterBySubBrand('sumaishaz')" class="cursor-pointer group bg-white rounded-2xl p-4 text-center border border-slate-200 shadow-sm hover:shadow-md hover:border-rose-300 transition">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-rose-100 text-rose-800 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-sm">স্টাইলিশ জুয়েলারি</h3>
+                    <span class="text-[11px] text-rose-700 font-medium">Sumaishaz</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Trust Badges -->
+    <section class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-2">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-sm">দ্রুততম হোম ডেলিভারি</h4>
+                    <p class="text-xs text-slate-500 mt-0.5">সারা বাংলাদেশে ২-৪ দিনে ডেলিভারি</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-2">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-sm">ক্যাশ অন ডেলিভারি</h4>
+                    <p class="text-xs text-slate-500 mt-0.5">পণ্য বুঝে পেয়ে টাকা পরিশোধের সুবিধা</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-2">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-sm">১০০% আসল প্রোডাক্ট</h4>
+                    <p class="text-xs text-slate-500 mt-0.5">প্রিমিয়াম কোয়ালিটি সুনিশ্চিত</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center text-xl mb-2">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-sm">সহজ রিটার্ন পলিসি</h4>
+                    <p class="text-xs text-slate-500 mt-0.5">সমস্যা থাকলে ৭ দিনে রিটার্ন সাপোর্ট</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews / Testimonials -->
+    <section id="testimonials" class="py-14 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <span class="text-amber-400 font-bold text-xs uppercase tracking-wider">কাস্টমার মতামত</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">আমাদের সম্মানিত ক্রেতাদের কথা</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            "Jumairah Fashion থেকে একটা শাড়ি কিনেছিলাম। কাপড় ও ডিজাইন দেখে আমি খুবই সন্তুষ্ট। ছবির থেকেও সরাসরি দেখতে বেশি সুন্দর!"
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-purple-600 flex items-center justify-center font-bold text-xs">স</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">সাদিয়া সুলতানা</h4>
+                            <span class="text-[10px] text-amber-300">ভেরিফাইড কাস্টমার (ঢাকা)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            "Sumaishaz-এর ট্রেন্ডি ব্যাগ ও টু-পিস আউটফিটগুলোর ফিনিশিং দারুণ। One Dokan-এর ডেলিভারিও বেশ দ্রুত ছিল।"
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-rose-600 flex items-center justify-center font-bold text-xs">ন</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">নুসরাত জাহান</h4>
+                            <span class="text-[10px] text-rose-300">ভেরিফাইড কাস্টমার (চট্টগ্রাম)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            "সবচেয়ে ভালো লেগেছে কাস্টমার সার্ভিসের ব্যবহার। প্রোডাক্ট কোয়ালিটি নিয়ে কোন অভিযোগ নেই। ধন্যবাদ ওয়ান দোকান!"
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-700 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-amber-600 flex items-center justify-center font-bold text-xs">ফ</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">ফারহানা চৌধুরী</h4>
+                            <span class="text-[10px] text-amber-300">ভেরিফাইড কাস্টমার (সিলেট)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800">
+        <!-- Main Footer Links -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-amber-600 text-white font-extrabold text-xl px-2.5 py-0.5 rounded-lg">১</span>
+                        <span class="text-2xl font-black text-white tracking-tight">ওয়ান<span class="text-amber-500">দোকান</span></span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        'ওয়ান দোকান' হচ্ছে একটি নির্ভরযোগ্য অনলাইন শপিং গন্তব্য। আমাদের দুই বিশেষ সাব-ব্র্যান্ড — <strong class="text-purple-300">Jumairah Fashion</strong> (অভিজাত ট্র্যাডিশনাল ফ্যাশন) এবং <strong class="text-rose-300">Sumaishaz</strong> (স্মার্ট মডার্ন ওয়্যার) এর মাধ্যমে আপনাকে সেরা কেনাকাটার অভিজ্ঞতা দিতে আমরা প্রতিশ্রুতিবদ্ধ।
+                    </p>
+                    
+                    <div class="flex gap-3 text-slate-300 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sub Brands -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-3 border-b border-slate-800 pb-2">আমাদের ব্র্যান্ডস</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#jumairah-section" class="hover:text-amber-400 transition">Jumairah Fashion (এথনিক)</a></li>
+                        <li><a href="#sumaishaz-section" class="hover:text-rose-400 transition">Sumaishaz (মডার্ন & ট্রেন্ডি)</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">এক্সক্লুসিভ শাড়ি ক্যাটালগ</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">ওয়েস্টার্ন কালেকশন</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">হ্যান্ডব্যাগ & অলংকার</a></li>
+                    </ul>
+                </div>
+
+                <!-- Useful Links -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-3 border-b border-slate-800 pb-2">গ্রাহক সেবা</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#" class="hover:text-amber-400 transition">অর্ডার ট্র্যাকিং</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">শিপিং ও ডেলিভারি পলিসি</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">রিটার্ন ও রিফান্ড নীতি</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">প্রাইভেসি পলিসি</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">সচরাচর জিজ্ঞাসিত প্রশ্ন (FAQ)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-3 border-b border-slate-800 pb-2">যোগাযোগ করুন</h4>
+                    <ul class="space-y-2 text-xs text-slate-400 mb-4">
+                        <li><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> ঢাকা, বাংলাদেশ</li>
+                        <li><i class="fa-solid fa-phone text-amber-500 mr-2"></i> ০১৯০০-০০০০০০</li>
+                        <li><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> info@onedokan.com</li>
+                    </ul>
+
+                    <div class="mt-2">
+                        <p class="text-[11px] text-slate-300 font-medium mb-1">অফার পেতে সাবস্ক্রাইব করুন:</p>
+                        <div class="flex">
+                            <input type="email" placeholder="আপনার ইমেইল..." class="bg-slate-900 border border-slate-700 rounded-l-lg px-2.5 py-1.5 text-xs text-white focus:outline-none w-full">
+                            <button class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-r-lg text-xs transition">
+                                যুক্ত হন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Payment Gateways & Bottom Bar -->
+            <div class="mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+                <p>© ২০২৬ One Dokan (Jumairah Fashion & Sumaishaz)। সর্বস্বত্ব সংরক্ষিত।</p>
+                
+                <!-- Payment Badges -->
+                <div class="flex items-center gap-2 flex-wrap justify-center">
+                    <span class="text-[10px] text-slate-400 mr-1">নিরাপদ পেমেন্ট মাধ্যম:</span>
+                    <span class="bg-slate-800 px-2 py-1 rounded text-pink-400 font-bold text-[10px] border border-slate-700">bKash</span>
+                    <span class="bg-slate-800 px-2 py-1 rounded text-orange-400 font-bold text-[10px] border border-slate-700">Nagad</span>
+                    <span class="bg-slate-800 px-2 py-1 rounded text-blue-400 font-bold text-[10px] border border-slate-700">VISA</span>
+                    <span class="bg-slate-800 px-2 py-1 rounded text-red-400 font-bold text-[10px] border border-slate-700">Mastercard</span>
+                    <span class="bg-slate-800 px-2 py-1 rounded text-emerald-400 font-bold text-[10px] border border-slate-700">COD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer Modal -->
+    <div id="cart-modal" class="fixed inset-0 z-50 bg-black/60 hidden transition-opacity">
+        <div class="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col justify-between">
+            <div class="p-4 bg-slate-900 text-white flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping text-amber-400"></i>
+                    <h3 class="font-bold text-base">আপনার শপিং ব্যাগ</h3>
+                </div>
+                <button onclick="toggleCartModal()" class="text-slate-400 hover:text-white text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Cart Items Container -->
+            <div id="cart-items-container" class="p-4 overflow-y-auto flex-1 space-y-3">
+                <!-- Dynamic Items Inserted via JavaScript -->
+            </div>
+
+            <!-- Cart Summary & Checkout Button -->
+            <div class="p-4 border-t bg-slate-50 space-y-3">
+                <div class="flex justify-between text-sm font-semibold">
+                    <span class="text-slate-600">মোট টাকা:</span>
+                    <span id="cart-subtotal" class="text-slate-900 font-extrabold">৳ 0</span>
+                </div>
+                <p class="text-[11px] text-slate-500">ডেলিভারি চার্জ চেকআউটের সময় নির্ধারণ করা হবে।</p>
+                <button onclick="handleCheckout()" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-3 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                    অর্ডার সম্পন্ন করুন <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Message Toast Box -->
+    <div id="toast-msg" class="fixed bottom-5 right-5 bg-slate-900 text-white border border-amber-400 px-4 py-3 rounded-xl shadow-2xl z-50 hidden transition-all duration-300 flex items-center gap-2 text-sm">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+        <span id="toast-text">পণ্যটি ব্যাগে যোগ করা হয়েছে!</span>
+    </div>
+
+
+    <!-- JavaScript Interactive Code Logic -->
+    <script>
+        // Sample Mock Products Dataset
+        const products = [
+            {
+                id: 1,
+                title: "রেশমি জামদানি শাড়ি - রয়্যাল মেজেন্টা",
+                brand: "jumairah",
+                brandName: "Jumairah Fashion",
+                price: 3450,
+                oldPrice: 4200,
+                rating: 4.9,
+                badge: "Exclusive",
+                image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+                isBestseller: true
+            },
+            {
+                id: 2,
+                title: "প্রিমিয়াম এমব্রয়ডারি থ্রি-পিস কালেকশন",
+                brand: "jumairah",
+                brandName: "Jumairah Fashion",
+                price: 2890,
+                oldPrice: 3500,
+                rating: 4.8,
+                badge: "New",
+                image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80",
+                isBestseller: true
+            },
+            {
+                id: 3,
+                title: "স্মার্ট প্রিন্টেড টু-পিস ক্যাজুয়াল ড্রেস",
+                brand: "sumaishaz",
+                brandName: "Sumaishaz",
+                price: 1650,
+                oldPrice: 2100,
+                rating: 4.7,
+                badge: "Sale",
+                image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80",
+                isBestseller: false
+            },
+            {
+                id: 4,
+                title: "স্টাইলিশ লেদার সাইড ব্যাগ & অলংকার সেট",
+                brand: "sumaishaz",
+                brandName: "Sumaishaz",
+                price: 1250,
+                oldPrice: 1550,
+                rating: 4.9,
+                badge: "Trending",
+                image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80",
+                isBestseller: true
+            },
+            {
+                id: 5,
+                title: "দুবাই চেরি ফেব্রিক প্রিমিয়াম আবায়া",
+                brand: "jumairah",
+                brandName: "Jumairah Fashion",
+                price: 3100,
+                oldPrice: 3800,
+                rating: 5.0,
+                badge: "Popular",
+                image: "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=600&q=80",
+                isBestseller: true
+            },
+            {
+                id: 6,
+                title: "ফিউশন ডিজাইন মডার্ন কুর্তি টপস",
+                brand: "sumaishaz",
+                brandName: "Sumaishaz",
+                price: 1190,
+                oldPrice: 1490,
+                rating: 4.6,
+                badge: "Sale",
+                image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80",
+                isBestseller: false
+            },
+            {
+                id: 7,
+                title: "পার্টি শাইন কাতান বেনারসী শাড়ি",
+                brand: "jumairah",
+                brandName: "Jumairah Fashion",
+                price: 4800,
+                oldPrice: 5800,
+                rating: 4.9,
+                badge: "Exclusive",
+                image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+                isBestseller: false
+            },
+            {
+                id: 8,
+                title: "ক্যাজুয়াল ফ্লোরাল ডেনিম জ্যাকট সেট",
+                brand: "sumaishaz",
+                brandName: "Sumaishaz",
+                price: 2100,
+                oldPrice: 2600,
+                rating: 4.8,
+                badge: "New",
+                image: "https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=600&q=80",
+                isBestseller: true
+            }
+        ];
+
+        // State Management
+        let cart = [];
+        let wishlistCount = 0;
+        let currentFilter = 'all';
+
+        // Initial Render
+        window.onload = function() {
+            renderProducts(products);
+            startCountdown();
+            setupMobileMenu();
+        };
+
+        // Render Product Cards Grid
+        function renderProducts(items) {
+            const container = document.getElementById('products-container');
+            container.innerHTML = '';
+
+            if (items.length === 0) {
+                container.innerHTML = `<div class="col-span-full text-center py-12 text-slate-500 font-medium">কোন প্রোডাক্ট পাওয়া যায়নি।</div>`;
+                return;
+            }
+
+            items.forEach(product => {
+                const isJumairah = product.brand === 'jumairah';
+                const tagColor = isJumairah 
+                    ? 'bg-purple-100 text-purple-900 border-purple-200' 
+                    : 'bg-rose-100 text-rose-900 border-rose-200';
+
+                const cardHTML = `
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="relative overflow-hidden aspect-[4/5] bg-slate-100">
+                            <!-- Image -->
+                            <img src="${product.image}" alt="${product.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            
+                            <!-- Badges -->
+                            <div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+                                <span class="text-[10px] font-bold px-2 py-0.5 rounded-md text-white bg-slate-900/80 backdrop-blur-sm">
+                                    ${product.badge}
+                                </span>
+                            </div>
+
+                            <!-- Wishlist Button -->
+                            <button onclick="toggleWishlist(this)" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-slate-700 hover:text-rose-500 flex items-center justify-center backdrop-blur-sm transition shadow-sm">
+                                <i class="fa-regular fa-heart text-xs"></i>
+                            </button>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div class="p-3.5 sm:p-4 flex flex-col justify-between flex-1">
+                            <div>
+                                <!-- Sub brand Tag -->
+                                <span class="text-[10px] font-bold px-2 py-0.5 rounded border ${tagColor} inline-block mb-1.5">
+                                    ${product.brandName}
+                                </span>
+
+                                <h3 class="font-bold text-slate-800 text-xs sm:text-sm line-clamp-2 hover:text-amber-600 transition">
+                                    ${product.title}
+                                </h3>
+                            </div>
+
+                            <div class="mt-3">
+                                <!-- Rating -->
+                                <div class="flex items-center gap-1 text-xs text-amber-500 mb-1">
+                                    <i class="fa-solid fa-star text-[10px]"></i>
+                                    <span class="font-bold text-slate-700 text-[11px]">${product.rating}</span>
+                                </div>
+
+                                <!-- Price -->
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-extrabold text-slate-900 text-base sm:text-lg">৳ ${product.price.toLocaleString('bn-BD')}</span>
+                                    <span class="text-xs text-slate-400 line-through">৳ ${product.oldPrice.toLocaleString('bn-BD')}</span>
+                                </div>
+
+                                <!-- Add to Cart Button -->
+                                <button onclick="addToCart(${product.id})" class="mt-3 w-full bg-slate-900 hover:bg-amber-600 text-white font-bold py-2 rounded-xl text-xs flex items-center justify-center gap-1.5 transition duration-200 shadow-sm">
+                                    <i class="fa-solid fa-bag-shopping"></i> কার্টে যোগ করুন
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += cardHTML;
+            });
+        }
+
+        // Active Tab Switcher Function
+        function setActiveTab(button, type) {
+            // Remove active classes from all tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+            });
+
+            // Highlight selected tab
+            button.className = "tab-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl bg-amber-600 text-white shadow-sm transition";
+
+            // Filter logic
+            if (type === 'all') {
+                renderProducts(products);
+            } else if (type === 'jumairah') {
+                renderProducts(products.filter(p => p.brand === 'jumairah'));
+            } else if (type === 'sumaishaz') {
+                renderProducts(products.filter(p => p.brand === 'sumaishaz'));
+            } else if (type === 'bestseller') {
+                renderProducts(products.filter(p => p.isBestseller));
+            }
+        }
+
+        // Filter products specifically by Sub Brand Pills
+        function filterBySubBrand(brandKey) {
+            const grid = document.getElementById('products-grid');
+            grid.scrollIntoView({ behavior: 'smooth' });
+
+            if(brandKey === 'all') {
+                renderProducts(products);
+            } else {
+                renderProducts(products.filter(p => p.brand === brandKey));
+            }
+            showToast(`প্রোডাক্ট ফিল্টার করা হয়েছে`);
+        }
+
+        // Wishlist Counter Toggle
+        function toggleWishlist(btn) {
+            const icon = btn.querySelector('i');
+            if (icon.classList.contains('fa-regular')) {
+                icon.classList.remove('fa-regular');
+                icon.classList.add('fa-solid', 'text-rose-500');
+                wishlistCount++;
+                showToast("উইশলিস্টে যোগ করা হয়েছে!");
+            } else {
+                icon.classList.remove('fa-solid', 'text-rose-500');
+                icon.classList.add('fa-regular');
+                wishlistCount--;
+            }
+            document.getElementById('wishlist-count').innerText = wishlistCount;
+        }
+
+        function openWishlistModal() {
+            showToast(`আপনার উইশলিস্টে ${wishlistCount}টি পণ্য আছে`);
+        }
+
+        // Cart Actions
+        function addToCart(productId) {
+            const item = products.find(p => p.id === productId);
+            const existing = cart.find(c => c.id === productId);
+
+            if (existing) {
+                existing.qty++;
+            } else {
+                cart.push({ ...item, qty: 1 });
+            }
+
+            updateCartUI();
+            showToast(`${item.title.substring(0, 20)}... কার্টে যোগ হয়েছে!`);
+        }
+
+        function updateCartUI() {
+            const totalItems = cart.reduce((acc, curr) => acc + curr.qty, 0);
+            const totalPrice = cart.reduce((acc, curr) => acc + (curr.price * curr.qty), 0);
+
+            document.getElementById('cart-count').innerText = totalItems;
+            document.getElementById('cart-total-header').innerText = `৳ ${totalPrice.toLocaleString('bn-BD')}`;
+            document.getElementById('cart-subtotal').innerText = `৳ ${totalPrice.toLocaleString('bn-BD')}`;
+
+            // Render Cart Modal Items
+            const cartContainer = document.getElementById('cart-items-container');
+            if (cart.length === 0) {
+                cartContainer.innerHTML = `<p class="text-center text-slate-400 py-10 text-xs">আপনার কার্ট ফাঁকা রয়েছে।</p>`;
+                return;
+            }
+
+            cartContainer.innerHTML = cart.map(item => `
+                <div class="flex items-center gap-3 p-2 bg-slate-50 border rounded-xl">
+                    <img src="${item.image}" class="w-14 h-14 object-cover rounded-lg">
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-xs text-slate-800 truncate">${item.title}</h4>
+                        <span class="text-[10px] text-slate-500">${item.brandName}</span>
+                        <p class="text-xs font-extrabold text-amber-700 mt-0.5">৳ ${item.price} x ${item.qty}</p>
+                    </div>
+                    <button onclick="removeFromCart(${item.id})" class="text-slate-400 hover:text-rose-600 p-1 text-xs">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            updateCartUI();
+        }
+
+        function toggleCartModal() {
+            const modal = document.getElementById('cart-modal');
+            modal.classList.toggle('hidden');
+        }
+
+        function handleCheckout() {
+            if(cart.length === 0) {
+                showToast("অনুগ্রহ করে প্রথমে পণ্য যোগ করুন!");
+                return;
+            }
+            showToast("ধন্যবাদ! চেকআউট প্রসেস শুরু হচ্ছে...");
+            setTimeout(() => {
+                cart = [];
+                updateCartUI();
+                toggleCartModal();
+            }, 1500);
+        }
+
+        // Custom Toast Notification System
+        function showToast(message) {
+            const toast = document.getElementById('toast-msg');
+            const text = document.getElementById('toast-text');
+            text.innerText = message;
+            
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 2500);
+        }
+
+        // Countdown Timer Logic
+        function startCountdown() {
+            let hours = 8, minutes = 45, seconds = 12;
+            setInterval(() => {
+                if (seconds > 0) {
+                    seconds--;
+                } else {
+                    seconds = 59;
+                    if (minutes > 0) {
+                        minutes--;
+                    } else {
+                        minutes = 59;
+                        if (hours > 0) hours--;
+                    }
+                }
+                document.getElementById('timer-hours').innerText = hours < 10 ? '০' + hours : hours;
+                document.getElementById('timer-minutes').innerText = minutes < 10 ? '০' + minutes : minutes;
+                document.getElementById('timer-seconds').innerText = seconds < 10 ? '০' + seconds : seconds;
+            }, 1000);
+        }
+
+        // Mobile Nav Drawer Toggle
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const drawer = document.getElementById('mobile-menu-drawer');
+            const closeBtn = document.getElementById('close-mobile-menu');
+
+            btn.addEventListener('click', () => {
+                drawer.classList.remove('hidden');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                drawer.classList.add('hidden');
+            });
+        }
+
+        function closeMobileNav() {
+            document.getElementById('mobile-menu-drawer').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
